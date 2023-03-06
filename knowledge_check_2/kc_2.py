@@ -10,7 +10,7 @@ print(df.head())
 occurrences = df['rating'].value_counts()
 print(occurrences)
 
-# Map the couhnt/occurrences for each group of rating
+# Map the count/occurrences for each group of rating
 plt.scatter(occurrences.index,occurrences.values, marker="s", c='red')
 plt.title('Occurrences by Rating')
 plt.xlabel('Rating')
